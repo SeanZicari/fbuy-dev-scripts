@@ -1,0 +1,3 @@
+#!/bin/bash
+
+git add $(git status | grep modified: | awk '{print $NF}' | grep -v run_)
